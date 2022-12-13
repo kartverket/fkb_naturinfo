@@ -1,5 +1,5 @@
 // Start of UML-model
-=== Pakke: «ApplicationSchema» FKB-Naturinfo-5.0
+=== Pakke: «ApplicationSchema» FKB-Naturinfo-5.0.1
 *Definisjon:* UML-datamodell for FKB-Naturinfo
  
 [discrete]
@@ -37,7 +37,7 @@
 |http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/5.0
  
 |version
-|5.0
+|5.0.1
  
 |xmlns
 |app
@@ -106,6 +106,7 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/5.0/fig
 |<<tretype,«CodeList» TreType>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/naturinfo/5.0/tretype + 
 defaultCodeSpace:  + 
 SOSI_datatype: H + 
 SOSI_lengde: 2 + 
@@ -204,6 +205,7 @@ image::http://skjema.geonorge.no/SOSI/produktspesifikasjon/FKB-Naturinfo/5.0/fig
 |<<tretype,«CodeList» TreType>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/naturinfo/5.0/tretype + 
 defaultCodeSpace:  + 
 SOSI_datatype: H + 
 SOSI_lengde: 2 + 
@@ -578,6 +580,7 @@ SOSI_navn: VERIFISERINGSDATO +
 |<<registreringsversjon,«CodeList» Registreringsversjon>>
 |Profilparametre i tagged values: 
 |
+defaultCodeSpace: https://register.geonorge.no/sosi-kodelister/fkb/generell/5.0/registreringsversjon + 
 defaultCodeSpace:  + 
 SOSI_datatype: T + 
 SOSI_lengde: 10 + 
@@ -613,9 +616,9 @@ SOSI_navn: INFORMASJON +
 |Subtyper:
 |<<kvalitetpåkrevd,«FeatureType» KvalitetPåkrevd>> +
 |Realisering av: 
-|/SOSI Model/SOSI Generell objektkatalog/FKB Generell del/FKB Generell del-5.0/Generelle elementer::«FeatureType» Fellesegenskaper +
-|Realisering av: 
 |«ApplicationSchema» Generelle typer 5.1/SOSI_Fellesegenskaper og SOSI_Objekt::«FeatureType» SOSI_Objekt +
+|Realisering av: 
+|/SOSI Model/SOSI Generell objektkatalog/FKB Generell del/FKB Generell del-5.0/Generelle elementer::«FeatureType» Fellesegenskaper +
 |===
  
 '''
@@ -654,9 +657,9 @@ SOSI_navn: KVALITET +
 |<<fellesegenskaper,«FeatureType» Fellesegenskaper>>
  
 |Subtyper:
-|<<stein,«featureType» Stein>> +
+|<<hekk,«featureType» Hekk>> +
+<<stein,«featureType» Stein>> +
 <<innmålttre,«featureType» InnmåltTre>> +
-<<hekk,«featureType» Hekk>> +
 |Realisering av: 
 |/SOSI Model/SOSI Generell objektkatalog/FKB Generell del/FKB Generell del-5.0/Generelle elementer::«FeatureType» KvalitetPåkrevd +
 |Realisering av: 
